@@ -16,7 +16,6 @@
 <script>
     export default {
         created() {
-            alert("dd");
             let channel = window.Echo.channel('my-channel');
             channel.listen('my-event', function(data) {
                 console.log(data);
